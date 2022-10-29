@@ -8,30 +8,30 @@ public class GameManager : MonoBehaviour
 {
     string currScene;
     public string mainMenuScene = "MainMenu";
-    //public string gameOverScene = "GameOver";
-    //public string winScene = "Win";
+    public string gameOverScene = "GameOver";
+    public string winScene = "Win";
     public string[] gameScenes;
     int currGameScene = -1;
-    //bool pause = false;
-    //public GameObject pauseMenu;
+    bool pause = false;
+    public GameObject pauseMenu;
     // Start is called before the first frame update
     void Start()
     {
         currScene = SceneManager.GetActiveScene().name;
         currGameScene = Array.IndexOf(gameScenes, currScene);
-        //pauseMenu.SetActive(false);
+        pauseMenu.SetActive(false);
         Time.timeScale = 1;
     }
 
     // Update is called once per frame
     void Update()
     {
-        /*if (Input.GetButtonDown("Pause") && currGameScene >= 0)
+        if (Input.GetButtonDown("Pause") && currGameScene >= 0)
         {
             Pause();
-        }*/
+        }
     }
-    /*void Pause()
+    void Pause()
     {
         pauseMenu.SetActive(!pause);
         if (!pause)
@@ -39,17 +39,17 @@ public class GameManager : MonoBehaviour
         else
             Time.timeScale = 1;
         pause = !pause;
-    }*/
+    }
     void NextScene()
     {
         if (currGameScene == -1)
             return;
         currGameScene++;
-        /*if (currGameScene >= gameScenes.Length)
+        if (currGameScene >= gameScenes.Length)
         {
             GotoWin();
             return;
-        }*/
+        }
         SceneManager.LoadScene(gameScenes[currGameScene]);
     }
     void GotoMainMenu()
@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour
         currScene = gameScenes[0];
         SceneManager.LoadScene(currScene);
     }
-    /*void GotoGameOver()
+    void GotoGameOver()
     {
         currScene = gameOverScene;
         SceneManager.LoadScene(gameOverScene);
@@ -74,7 +74,7 @@ public class GameManager : MonoBehaviour
     {
         currScene = winScene;
         SceneManager.LoadScene(winScene);
-    }*/
+    }
     void Quit()
     {
         Application.Quit(0);

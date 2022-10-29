@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638020783194028782
-    m_Hash: 1408241324
+      ticks: 638023535877845570
+    m_Hash: 1508998822
   m_LockFileStatus:
     m_FilePath: C:/Users/gilmo/CSCE552_3DGame/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638020783976457372
-    m_Hash: 994498553
+      ticks: 638023535877845570
+    m_Hash: 2287269366
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -305,9 +305,11 @@ m_ResolvedPackages:
     - 3.0.13
     - 3.0.14
     - 3.0.15
+    - 3.0.16
     compatible:
     - 3.0.15
-    verified: 3.0.15
+    - 3.0.16
+    verified: 3.0.16
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -527,11 +529,13 @@ m_ResolvedPackages:
     - 1.1.30
     - 1.1.31
     - 1.1.33
+    - 1.3.0
     - 2.0.1-exp.1
     - 2.0.1-pre.12
     - 2.0.1-pre.18
     compatible:
     - 1.1.33
+    - 1.3.0
     - 2.0.1-exp.1
     - 2.0.1-pre.12
     - 2.0.1-pre.18
@@ -832,9 +836,11 @@ m_ResolvedPackages:
     - 1.7.0-pre.2
     - 1.7.0
     - 1.7.1
+    - 1.7.2
     compatible:
     - 1.7.1
-    verified: 1.7.1
+    - 1.7.2
+    verified: 1.7.2
   dependencies:
   - name: com.unity.modules.director
     version: 1.0.0
@@ -3088,9 +3094,11 @@ m_ResolvedPackages:
     - 1.4.1
     - 1.4.2
     - 1.4.3
+    - 1.5.2
     compatible:
     - 1.4.2
     - 1.4.3
+    - 1.5.2
     verified: 1.4.3
   dependencies:
   - name: com.unity.modules.unitywebrequest
@@ -3148,6 +3156,13 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
+    - 0.1.0-preview.4
+    - 0.1.0-preview.8
+    - 1.0.0
+    - 1.0.1
+    - 1.0.2
+    - 1.0.3
+    - 2.0.0
     - 2.0.1
     compatible:
     - 2.0.1
@@ -3164,7 +3179,7 @@ m_ResolvedPackages:
     capabilities: 7
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 637744099390000000
   documentationUrl: 
   hasRepository: 1
   repository:
