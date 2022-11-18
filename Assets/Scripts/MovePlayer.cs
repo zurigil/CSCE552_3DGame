@@ -5,6 +5,7 @@ using UnityEngine;
 public class MovePlayer : MonoBehaviour
 {
     public float moveSpeed = 7.0f;
+    public float rotateSpeed = 3.0f;
     float inputX;
     float inputZ;
 
@@ -26,7 +27,21 @@ public class MovePlayer : MonoBehaviour
         inputX = Input.GetAxis("Horizontal");
         inputZ = Input.GetAxis("Vertical");
         moveVect = new Vector3(inputX, 0, inputZ);
-        rigidBody.velocity = moveVect*moveSpeed;
+        //moveVect = transform.forward;
+        rigidBody.velocity = moveVect * moveSpeed;
+        /*moveVect = transform.forward;
+        rigidBody.velocity = moveVect * moveSpeed;
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            rigidBody.velocity = moveVect * moveSpeed;
+        }
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            rigidBody.velocity = -moveVect * moveSpeed;
+        }*/
+        //transform.Rotate(0, inputX * 60 * Time.deltaTime, 0);
+        //Quaternian toRotation = Quaternion.LookRotation(moveVect, Vector3.up);
+        //transform.rotation = Quaternian.RotateTowards(transform.rotation, toRotation, rotateSpeed * Time.deltaTime);
     }
 
     /*void FixedUpdate()
