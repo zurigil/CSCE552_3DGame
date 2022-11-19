@@ -21,4 +21,12 @@ public class HarvestCarrot : MonoBehaviour
 
         //}
     }
+
+    void HarvestingCarrot()
+    {
+        Vector3 originalVect = new(69.36f, 4.94f, 49.58f);
+        Vector3 moveVect = new(69.36f, 50.0f, 49.58f);
+        transform.position = moveVect;
+        
+    }
 }
