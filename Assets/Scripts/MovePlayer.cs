@@ -26,9 +26,9 @@ public class MovePlayer : MonoBehaviour
         //transform.translate = Quaternion.Euler(position.x, lockPos, position.y);
         inputX = Input.GetAxis("Horizontal");
         inputZ = Input.GetAxis("Vertical");
-        moveVect = new Vector3(inputX, 0, inputZ);
+        moveVect = new Vector3(0, 0, inputZ);
         //moveVect = transform.forward;
-        rigidBody.velocity = moveVect * moveSpeed;
+        rigidBody.velocity = transform.forward * inputZ * moveSpeed;
         /*moveVect = transform.forward;
         rigidBody.velocity = moveVect * moveSpeed;
         if (Input.GetKey(KeyCode.UpArrow))
@@ -39,7 +39,7 @@ public class MovePlayer : MonoBehaviour
         {
             rigidBody.velocity = -moveVect * moveSpeed;
         }*/
-        //transform.Rotate(0, inputX * 60 * Time.deltaTime, 0);
+        transform.Rotate(0, inputX * 60 * Time.deltaTime, 0);
         //Quaternian toRotation = Quaternion.LookRotation(moveVect, Vector3.up);
         //transform.rotation = Quaternian.RotateTowards(transform.rotation, toRotation, rotateSpeed * Time.deltaTime);
     }

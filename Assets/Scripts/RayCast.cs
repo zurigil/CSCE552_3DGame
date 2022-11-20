@@ -44,7 +44,7 @@ public class RayCast : MonoBehaviour
     void HarvestingCarrot(GameObject carrot)
     {
         Vector3 moveVect = new(0, 50.0f, 0);
-        Vector3 newPosition = carrot.transform.position + moveVect;
+        Vector3 newPosition = carrot.transform.position - moveVect;
         carrot.transform.position = newPosition;
         harvestCarrot.Play(0);
     }
