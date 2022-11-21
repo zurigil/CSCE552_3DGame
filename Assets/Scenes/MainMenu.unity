@@ -149,7 +149,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1145fc05c84964d458c036144c84a528, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.1
+      value: 9.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1145fc05c84964d458c036144c84a528, type: 3}
       propertyPath: m_LocalPosition.y
@@ -157,7 +157,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1145fc05c84964d458c036144c84a528, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 27.2
+      value: 34.8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1145fc05c84964d458c036144c84a528, type: 3}
       propertyPath: m_LocalRotation.w
@@ -190,6 +190,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1145fc05c84964d458c036144c84a528, type: 3}
       propertyPath: m_Name
       value: bridgescene
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1145fc05c84964d458c036144c84a528, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -1273,7 +1277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.28627452, g: 0.28627452, b: 0.28627452, a: 0.392}
+  m_Color: {r: 0.3059274, g: 0.4811321, b: 0.38968503, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
