@@ -11,7 +11,7 @@ public class MovePlayer : MonoBehaviour
 
     Rigidbody rigidBody;
     Vector3 moveVect;
-    int lockPos = 0;
+    // int lockPos = 0;
     // Start is called before the first frame update
     void Start()
     {
