@@ -48,7 +48,9 @@ MonoBehaviour:
   mainMenuScene: MainMenu
   gameOverScene: GameOver
   winScene: Win
+  howToScene: HowToScene
   gameScenes:
+  - HowToScene
   - TownScene
   pauseMenu: {fileID: 8064296656229905895}
 --- !u!1 &2037471656628695272

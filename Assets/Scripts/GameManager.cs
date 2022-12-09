@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public string mainMenuScene = "MainMenu";
     public string gameOverScene = "GameOver";
     public string winScene = "Win";
+    public string howToScene = "HowToScene";
     public string[] gameScenes;
     int currGameScene = -1;
     bool pause = false;
@@ -56,6 +57,11 @@ public class GameManager : MonoBehaviour
     {
         currScene = mainMenuScene;
         SceneManager.LoadScene(mainMenuScene);
+    }
+    void GotoHowTo()
+    {
+        currScene = howToScene;
+        SceneManager.LoadScene(howToScene);
     }
     void StartGame()
     {
