@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     int currGameScene = -1;
     bool pause = false;
     public GameObject pauseMenu;
+    GameObject camera;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,9 +37,19 @@ public class GameManager : MonoBehaviour
     {
         pauseMenu.SetActive(!pause);
         if (!pause)
+        {
             Time.timeScale = 0;
+            //Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
         else
+        {
             Time.timeScale = 1;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            //camera = gameObject.Find("Main Camera");
+            //camera.enabled = false;
+        }
         pause = !pause;
     }
     void NextScene()
@@ -57,6 +68,7 @@ public class GameManager : MonoBehaviour
     {
         currScene = mainMenuScene;
         SceneManager.LoadScene(mainMenuScene);
+        Cursor.visible = true;
     }
     void GotoHowTo()
     {
@@ -67,8 +79,8 @@ public class GameManager : MonoBehaviour
     {
         if (gameScenes == null)
             return;
-        currGameScene = 0;
-        currScene = gameScenes[0];
+        currGameScene = 1;
+        currScene = gameScenes[1];
         SceneManager.LoadScene(currScene);
     }
     void GotoGameOver()

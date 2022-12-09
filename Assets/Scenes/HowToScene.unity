@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 309331351}
   - component: {fileID: 309331350}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: How to Navigate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

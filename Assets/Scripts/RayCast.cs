@@ -21,7 +21,7 @@ public class RayCast : MonoBehaviour
         Ray theRay = new Ray(transform.position, transform.TransformDirection(direction * range));
         Debug.DrawRay(transform.position, transform.TransformDirection(direction * range));*/
         RaycastHit hit;
-        if(Physics.Raycast(transform.position,transform.forward, out hit, 10))
+        if(Physics.Raycast(transform.position,transform.forward, out hit, 15))
         {
             if(hit.collider.CompareTag("Carrot"))
             {
