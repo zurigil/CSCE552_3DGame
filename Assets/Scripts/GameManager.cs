@@ -102,6 +102,7 @@ public class GameManager : MonoBehaviour
     void Quit()
     {
         Application.Quit(0);
+        Debug.Log("Quitting");
     }
 }
 
