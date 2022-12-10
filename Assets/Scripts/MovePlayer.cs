@@ -9,13 +9,19 @@ public class MovePlayer : MonoBehaviour
     float inputX;
     float inputZ;
 
+    public GameObject player;
     Rigidbody rigidBody;
     Vector3 moveVect;
+    bool loadFromSave;
     // int lockPos = 0;
     // Start is called before the first frame update
     void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
+        if (GameManager.LoadGame == false)
+            player.transform.position = new Vector3(19.5f, 6.0f, 12.4f);
+        else
+            player.transform.position = new Vector3(PlayerPrefs.GetFloat("X"), 6, PlayerPrefs.GetFloat("Z"));
     }
 
     // Update is called once per frame

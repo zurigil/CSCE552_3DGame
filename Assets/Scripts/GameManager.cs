@@ -17,6 +17,19 @@ public class GameManager : MonoBehaviour
     bool pause = false;
     public GameObject pauseMenu;
     GameObject camera;
+    public GameObject player;
+    public GameObject carrot;
+    public static bool LoadGame;
+    public GameObject Carrot;
+    public GameObject Carrot1;
+    public GameObject Carrot2;
+    public GameObject Carrot3;
+    public GameObject Carrot4;
+    public GameObject Carrot5;
+    public GameObject Carrot6;
+    public GameObject Carrot7;
+    public GameObject Carrot8;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +37,8 @@ public class GameManager : MonoBehaviour
         currGameScene = Array.IndexOf(gameScenes, currScene);
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
+        player = GameObject.FindGameObjectWithTag("Player");
+        carrot = GameObject.FindGameObjectWithTag("Carrot");
     }
 
     // Update is called once per frame
@@ -45,6 +60,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+            SavePosition();
             Cursor.visible = true;
             Time.timeScale = 1;
             Cursor.lockState = CursorLockMode.None;
@@ -81,10 +97,20 @@ public class GameManager : MonoBehaviour
         currScene = aboutScene;
         SceneManager.LoadScene(aboutScene);
     }
-    void StartGame()
+    void StartNewGame()
     {
         if (gameScenes == null)
             return;
+        LoadGame = false;
+        currGameScene = 0;
+        currScene = gameScenes[0];
+        SceneManager.LoadScene(currScene);
+    }
+    void LoadPrevGame()
+    {
+        if (gameScenes == null)
+            return;
+        LoadGame = true;
         currGameScene = 0;
         currScene = gameScenes[0];
         SceneManager.LoadScene(currScene);
@@ -101,8 +127,51 @@ public class GameManager : MonoBehaviour
     }
     void Quit()
     {
+        SavePosition();
         Application.Quit(0);
-        Debug.Log("Quitting");
     }
+
+   
+    public void SavePosition()
+    {
+        float xPos = player.transform.position.x;
+        float zPos = player.transform.position.z;
+
+        float Carrot = player.transform.position.y;
+        float Carrot1 = player.transform.position.y;
+        float Carrot2 = player.transform.position.y;
+        float Carrot3 = player.transform.position.y;
+        float Carrot4 = player.transform.position.y;
+        float Carrot5 = player.transform.position.y;
+        float Carrot6 = player.transform.position.y;
+        float Carrot7 = player.transform.position.y;
+        float Carrot8 = player.transform.position.y;
+
+        PlayerPrefs.SetFloat("X", xPos);
+        PlayerPrefs.SetFloat("Z", zPos);
+
+        PlayerPrefs.SetFloat("Carrot", Carrot);
+        PlayerPrefs.SetFloat("Carrot1", Carrot1);
+        PlayerPrefs.SetFloat("Carrot2", Carrot2);
+        PlayerPrefs.SetFloat("Carrot3", Carrot3);
+        PlayerPrefs.SetFloat("Carrot4", Carrot4);
+        PlayerPrefs.SetFloat("Carrot5", Carrot5);
+        PlayerPrefs.SetFloat("Carrot6", Carrot6);
+        PlayerPrefs.SetFloat("Carrot7", Carrot7);
+        PlayerPrefs.SetFloat("Carrot8", Carrot8);
+
+
+        PlayerPrefs.Save();
+
+
+    }
+
+    /* Things to save
+     * carrot count
+     * game status
+     * carrot position
+     * 
+     */
 }
+
 

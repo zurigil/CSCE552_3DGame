@@ -1068,7 +1068,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7090138482424031041, guid: 8cfd42284cbe056419bc1da5d5ccef7e, type: 3}
       propertyPath: m_Name
-      value: Carrot (4)
+      value: Carrot4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090138482424031041, guid: 8cfd42284cbe056419bc1da5d5ccef7e, type: 3}
+      propertyPath: m_TagString
+      value: Carrot4
       objectReference: {fileID: 0}
     - target: {fileID: 7090138482424031055, guid: 8cfd42284cbe056419bc1da5d5ccef7e, type: 3}
       propertyPath: m_RootOrder
@@ -1127,7 +1131,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7090138482424031041, guid: 8cfd42284cbe056419bc1da5d5ccef7e, type: 3}
       propertyPath: m_Name
-      value: Carrot (8)
+      value: Carrot8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090138482424031041, guid: 8cfd42284cbe056419bc1da5d5ccef7e, type: 3}
+      propertyPath: m_TagString
+      value: Carrot8
       objectReference: {fileID: 0}
     - target: {fileID: 7090138482424031055, guid: 8cfd42284cbe056419bc1da5d5ccef7e, type: 3}
       propertyPath: m_RootOrder
@@ -1257,7 +1265,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7090138482424031041, guid: 8cfd42284cbe056419bc1da5d5ccef7e, type: 3}
       propertyPath: m_Name
-      value: Carrot (2)
+      value: Carrot2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090138482424031041, guid: 8cfd42284cbe056419bc1da5d5ccef7e, type: 3}
+      propertyPath: m_TagString
+      value: Carrot2
       objectReference: {fileID: 0}
     - target: {fileID: 7090138482424031055, guid: 8cfd42284cbe056419bc1da5d5ccef7e, type: 3}
       propertyPath: m_RootOrder
@@ -1468,7 +1480,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7090138482424031041, guid: 8cfd42284cbe056419bc1da5d5ccef7e, type: 3}
       propertyPath: m_Name
-      value: Carrot (5)
+      value: Carrot5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090138482424031041, guid: 8cfd42284cbe056419bc1da5d5ccef7e, type: 3}
+      propertyPath: m_TagString
+      value: Carrot5
       objectReference: {fileID: 0}
     - target: {fileID: 7090138482424031055, guid: 8cfd42284cbe056419bc1da5d5ccef7e, type: 3}
       propertyPath: m_RootOrder
@@ -1574,9 +1590,37 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 7481863855809831361, guid: 8945cddcb810cab4e90dba14be255571, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1325667765}
+    - target: {fileID: 7481863855809831361, guid: 8945cddcb810cab4e90dba14be255571, type: 3}
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 1774622622}
+    - target: {fileID: 7511418203856849283, guid: 8945cddcb810cab4e90dba14be255571, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511418203856849283, guid: 8945cddcb810cab4e90dba14be255571, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 768377661}
+    - target: {fileID: 7511418203856849283, guid: 8945cddcb810cab4e90dba14be255571, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SendMessage
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511418203856849283, guid: 8945cddcb810cab4e90dba14be255571, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511418203856849283, guid: 8945cddcb810cab4e90dba14be255571, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Quit
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511418203856849283, guid: 8945cddcb810cab4e90dba14be255571, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8064296656229905895, guid: 8945cddcb810cab4e90dba14be255571, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -1584,6 +1628,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 8945cddcb810cab4e90dba14be255571, type: 3}
+--- !u!1 &768377661 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 663601469757280206, guid: 8945cddcb810cab4e90dba14be255571, type: 3}
+  m_PrefabInstance: {fileID: 768377660}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &834519702 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 62d377caff3dd974293f958846366c93, type: 3}
@@ -1715,7 +1764,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7090138482424031041, guid: 8cfd42284cbe056419bc1da5d5ccef7e, type: 3}
       propertyPath: m_Name
-      value: Carrot (6)
+      value: Carrot6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090138482424031041, guid: 8cfd42284cbe056419bc1da5d5ccef7e, type: 3}
+      propertyPath: m_TagString
+      value: Carrot6
       objectReference: {fileID: 0}
     - target: {fileID: 7090138482424031055, guid: 8cfd42284cbe056419bc1da5d5ccef7e, type: 3}
       propertyPath: m_RootOrder
@@ -1860,7 +1913,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7090138482424031041, guid: 8cfd42284cbe056419bc1da5d5ccef7e, type: 3}
       propertyPath: m_Name
-      value: Carrot (3)
+      value: Carrot3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090138482424031041, guid: 8cfd42284cbe056419bc1da5d5ccef7e, type: 3}
+      propertyPath: m_TagString
+      value: Carrot3
       objectReference: {fileID: 0}
     - target: {fileID: 7090138482424031055, guid: 8cfd42284cbe056419bc1da5d5ccef7e, type: 3}
       propertyPath: m_RootOrder
@@ -2035,6 +2092,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   rotateSpeed: 3
+  player: {fileID: 1325667765}
 --- !u!23 &1325667768
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3500,7 +3558,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7090138482424031041, guid: 8cfd42284cbe056419bc1da5d5ccef7e, type: 3}
       propertyPath: m_Name
-      value: Carrot (1)
+      value: Carrot1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090138482424031041, guid: 8cfd42284cbe056419bc1da5d5ccef7e, type: 3}
+      propertyPath: m_TagString
+      value: Carrot1
       objectReference: {fileID: 0}
     - target: {fileID: 7090138482424031055, guid: 8cfd42284cbe056419bc1da5d5ccef7e, type: 3}
       propertyPath: m_RootOrder
@@ -3554,6 +3616,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 62d377caff3dd974293f958846366c93, type: 3}
   m_PrefabInstance: {fileID: 663493915}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1807023006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1807023007}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1807023007
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807023006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 19.5, y: 8.45, z: 9.389999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1832279353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3564,7 +3657,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7090138482424031041, guid: 8cfd42284cbe056419bc1da5d5ccef7e, type: 3}
       propertyPath: m_Name
-      value: Carrot (7)
+      value: Carrot7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090138482424031041, guid: 8cfd42284cbe056419bc1da5d5ccef7e, type: 3}
+      propertyPath: m_TagString
+      value: Carrot7
       objectReference: {fileID: 0}
     - target: {fileID: 7090138482424031055, guid: 8cfd42284cbe056419bc1da5d5ccef7e, type: 3}
       propertyPath: m_RootOrder

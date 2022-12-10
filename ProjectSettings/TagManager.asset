@@ -3,7 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Door
+  - House
+  - Ground
+  - Carrot
+  - Carrot1
+  - Carrot2
+  - Carrot3
+  - Carrot4
+  - Carrot5
+  - Carrot6
+  - Carrot7
+  - Carrot8
   layers:
   - Default
   - TransparentFX
