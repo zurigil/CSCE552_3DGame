@@ -18,17 +18,16 @@ public class GameManager : MonoBehaviour
     public GameObject pauseMenu;
     GameObject camera;
     public GameObject player;
-    public GameObject carrot;
     public static bool LoadGame;
-    public GameObject Carrot;
-    public GameObject Carrot1;
-    public GameObject Carrot2;
-    public GameObject Carrot3;
-    public GameObject Carrot4;
-    public GameObject Carrot5;
-    public GameObject Carrot6;
-    public GameObject Carrot7;
-    public GameObject Carrot8;
+    public GameObject carrot;
+    public GameObject carrot1;
+    public GameObject carrot2;
+    public GameObject carrot3;
+    public GameObject carrot4;
+    public GameObject carrot5;
+    public GameObject carrot6;
+    public GameObject carrot7;
+    public GameObject carrot8;
     
     // Start is called before the first frame update
     void Start()
@@ -137,15 +136,15 @@ public class GameManager : MonoBehaviour
         float xPos = player.transform.position.x;
         float zPos = player.transform.position.z;
 
-        float Carrot = player.transform.position.y;
-        float Carrot1 = player.transform.position.y;
-        float Carrot2 = player.transform.position.y;
-        float Carrot3 = player.transform.position.y;
-        float Carrot4 = player.transform.position.y;
-        float Carrot5 = player.transform.position.y;
-        float Carrot6 = player.transform.position.y;
-        float Carrot7 = player.transform.position.y;
-        float Carrot8 = player.transform.position.y;
+        float Carrot = carrot.transform.position.y;
+        float Carrot1 = carrot1.transform.position.y;
+        float Carrot2 = carrot2.transform.position.y;
+        float Carrot3 = carrot3.transform.position.y;
+        float Carrot4 = carrot4.transform.position.y;
+        float Carrot5 = carrot5.transform.position.y;
+        float Carrot6 = carrot6.transform.position.y;
+        float Carrot7 = carrot7.transform.position.y;
+        float Carrot8 = carrot8.transform.position.y;
 
         PlayerPrefs.SetFloat("X", xPos);
         PlayerPrefs.SetFloat("Z", zPos);
