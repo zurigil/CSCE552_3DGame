@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public string gameOverScene = "GameOver";
     public string winScene = "Win";
     public string howToScene = "HowToScene";
+    public string aboutScene = "AboutScene";
     public string[] gameScenes;
     int currGameScene = -1;
     bool pause = false;
@@ -44,9 +45,9 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+            Cursor.visible = true;
             Time.timeScale = 1;
             Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
             //camera = gameObject.Find("Main Camera");
             //camera.enabled = false;
         }
@@ -75,12 +76,17 @@ public class GameManager : MonoBehaviour
         currScene = howToScene;
         SceneManager.LoadScene(howToScene);
     }
+    void GotoAbout()
+    {
+        currScene = aboutScene;
+        SceneManager.LoadScene(aboutScene);
+    }
     void StartGame()
     {
         if (gameScenes == null)
             return;
-        currGameScene = 1;
-        currScene = gameScenes[1];
+        currGameScene = 0;
+        currScene = gameScenes[0];
         SceneManager.LoadScene(currScene);
     }
     void GotoGameOver()
